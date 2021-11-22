@@ -1,0 +1,127 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.profile1 {
+  margin-top: 25px;
+}
+
+.profile1 .img-box {
+  opacity: 1px;
+  display: block;
+  position: relative;
+}
+
+.team-heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: bolder !important;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+.team-subtitle {
+  font-size: 10px !important;
+  font-weight: 600 !important;
+  margin-top: 1px !important;
+}
+
+/* .img-box::after {
+  content: "";
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+} */
+
+.img-box ul {
+  margin: 0;
+  padding: 40px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  display: block;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+}
+
+.img-box ul li {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #fff;
+  border-radius: 30%;
+  margin: 3px;
+  margin-bottom: 3px;
+  padding: 7px;
+  display: inline-block;
+}
+
+.img-box a {
+  color: #fff;
+}
+
+.img-box:hover:after {
+  opacity: 1;
+}
+
+.img-box:hover ul {
+  opacity: 1;
+}
+
+.img-box a:hover li {
+  color: #007bff;
+  border: 1px solid #007bff;
+}
+
+.img-box after,
+.img-box ul,
+.img-box ul li {
+  transition: all 0.5s ease-in-out 0s;
+}
+
+.social.instagram.hunter {
+  max-width: 250px !important;
+  max-height: 400px !important;
+}
+
+.update-font {
+  font-weight: 300 !important;
+}
+
+.update-header {
+  font-weight: 300 !important;
+}
+
+.align-navbar {
+  display: inline-block !important;
+}
+
+@media (max-width: 960px) and (min-width: 501px) {
+  .align-navbar {
+    display: inline-block !important;
+    width: 50%;
+  } /* Show 2 logos per row on medium devices (tablets, phones in landscape) */
+}
+
+@media (max-width: 500px) {
+  .align-navbar {
+    display: inline-block !important;
+    width: 100%;
+  } /* On small screens, show one logo per row */
+}
+
+.main {
+  border: 0.3px solid black;
+  color: black;
+  background: white;
+}
+#temporary{
+  font-family: "Montserrat", sans-serif;
+  font-size:30px;
+  font-weight: bolder !important;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
